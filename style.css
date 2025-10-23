@@ -1,0 +1,109 @@
+/* ======= Reset básico ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======= Corpo e tipografia ======= */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(180deg, #f8f9fc 0%, #e9ecf5 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ======= Cabeçalho ======= */
+header {
+    background: linear-gradient(135deg, #4e73df, #224abe);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ======= Seções ======= */
+section {
+    padding: 2.5rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    color: #4e73df;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #4e73df;
+    margin: 0.5rem auto 0;
+    border-radius: 4px;
+}
+
+/* ======= Projetos ======= */
+.projects ul {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+}
+
+.projects li {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projects li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ======= Sobre ======= */
+.about p {
+    max-width: 700px;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* ======= Rodapé ======= */
+footer {
+    background-color: #2e59d9;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #f8f9fc;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
